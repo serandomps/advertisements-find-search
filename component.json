@@ -9,7 +9,7 @@
         "serandomps/dust": "master",
         "serandomps/serand": "master",
         "serandomps/utils": "master",
-        "serandomps/advertisement-service": "master",
+        "serandomps/advertisements-service": "master",
         "serandomps/advertisements-listing": "master"
     }
 }
