@@ -1,0 +1,15 @@
+{
+    "name": "advertisements-listing-search",
+    "description": "advertisements-listing-search component",
+    "local": [],
+    "scripts": ["index.js"],
+    "styles": ["styles.css"],
+    "main": "index.js",
+    "dependencies": {
+        "serandomps/dust": "master",
+        "serandomps/serand": "master",
+        "serandomps/utils": "master",
+        "serandomps/advertisement-service": "master",
+        "serandomps/advertisements-listing": "master"
+    }
+}
