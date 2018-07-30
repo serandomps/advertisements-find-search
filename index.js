@@ -4,17 +4,17 @@ var utils = require('utils');
 var Advertisement = require('advertisements-service');
 var list = require('advertisements-find');
 
-module.exports = function (sandbox, fn, options) {
+module.exports = function (sandbox, options, done) {
     Advertisement.find({
         query: options,
         images: '288x162'
     }, function (err, advertisements) {
         if (err) {
-            return fn(true, serand.none);
+            return done(err);
         }
-        list(sandbox, fn, {
+        list(sandbox, {
             advertisements: advertisements,
             size: 4
-        });
+        }, done);
     });
 };
