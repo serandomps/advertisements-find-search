@@ -4,7 +4,8 @@ var utils = require('utils');
 var Advertisement = require('advertisements-service');
 var list = require('advertisements-find');
 
-module.exports = function (ctx, sandbox, options, done) {
+module.exports = function (ctx, container, options, done) {
+    var sandbox = container.sandbox;
     Advertisement.find({
         query: options,
         images: '288x162'
